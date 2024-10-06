@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(254, 255, 235);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #FFC10E;
+    align-items: center;
+    width: 100vw;
+    height: 15vh;
+}
+
+.section1 {
+    background-color: #FFC10E;
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+}
+
+.section2 {
+    background-color: #D4EFFD;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section3 {
+    background-color: #B6DEC4;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section3 img {
+    height: 50vh;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    height: 12vh;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+a {
+    border: none;
+    background: white;
+    padding: 16px 32px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    transition: 350ms ease 100ms;
+}
+
+a:focus {
+    background: midnightblue;
+}
+
+a:hover {
+    background: #008CBA;
+    color: white;
+}
+
+header a {
+    background: none;
+    font-size: 2em;
+    color: black;
+    border: 0.1em solid black;
+    padding: 0.1em;
+    background: #ffffff;
+}
+
+header a:hover {
+    background: #D4EFFD;
+    color: black;
+}
+
+header a:focus {
+    background: #B6DEC4;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #424242;
+    color: white;
+}
+
+footer a {
+    border: none;
+    background: none;
+    color: white;
+    padding: 0.5em;
+    margin: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+iframe {
+    width: 35em; 
+    height: 19em;
+}
+
+@keyframes slideIn {
+    0% { 
+        transform: scale(1) translateX(-100%); 
+    }
+    50% { 
+        transform: scale(1.05); 
+    }
+    100% { 
+        transform: scale(1) translateX(0); 
+    }
+}
+
+@keyframes pulse {
+    0% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.05); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
+}
+
+.slide-in {
+    animation: slideIn 2s 1 forwards;
+}
+
+.section1 div {
+    display: flex;
+    justify-content: center;
+}
